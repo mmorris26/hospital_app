@@ -1,0 +1,24 @@
+<%= form_for @patient do |f| %>
+    <div class="field">
+        <%= f.label :first_name, "First Name" %>
+        <%= f.text_field :first_name %>
+    </div>
+
+
+    <div class="field">
+        <%= f.label :last_name, "Last Name" %>
+        <%= f.text_field :last_name %>
+    </div>
+
+    <div class="field">
+        <%= f.label :born_on, "Date of Birth" %>
+        <%= f.text_field :born_on %>
+    </div>
+
+    <div class="field">
+        <%= f.label :diagnosis, "Diagnosis" %>
+        <%= f.text_field :diagnosis %>
+    </div>
+
+    <%= f.submit "Submit", :class => 'button' %>
+<% end %>
